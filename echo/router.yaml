@@ -1,0 +1,10 @@
+type: google.api.Service
+config_version: 3
+
+http:
+  rules:
+    - selector: echo.Echo.Update
+      post: /v1/example/echo
+      body: "*"
+    - selector: echo.Echo.Get
+      get: /v1/example/echo
